@@ -18,7 +18,10 @@
     const { H5P } = H5PStandalone;
 
     new H5P(document.getElementById('h5p-container'), {
-      h5pJsonPath: 'h5p-folder/content',  // ✅ This is the key fix
+      // ✅ Point to folder where BOTH h5p.json and content.json live
+      h5pJsonPath: 'h5p-folder/content',
+
+      // ✅ Make sure these paths match your folder names
       frameJs: 'dist/frame.bundle.js',
       frameCss: 'dist/styles/h5p.css'
     });
