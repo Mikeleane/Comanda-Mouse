@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Comanda De Bebidas</title>
 
-  <!-- H5P CSS from CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css" />
+  <!-- Use your own H5P styles from /dist -->
+  <link rel="stylesheet" href="dist/styles/h5p.css" />
 </head>
 
-<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color: #ffffff;">
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #ffffff;">
   <div id="h5p-container"></div>
 
-  <!-- H5P Standalone JS from CDN -->
-  <script src="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/main.bundle.js"></script>
+  <!-- Local H5P JS bundle (from your own repo) -->
+  <script src="dist/main.bundle.js"></script>
 
   <script>
     const { H5P } = H5PStandalone;
     new H5P(document.getElementById('h5p-container'), {
       h5pJsonPath: 'h5p-folder',
-      frameJs: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/frame.bundle.js',
-      frameCss: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css'
+      frameJs: 'dist/frame.bundle.js',
+      frameCss: 'dist/styles/h5p.css'
     });
   </script>
 </body>
