@@ -3,23 +3,22 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Comanda De Bebidas</title>
-
-  <!-- Use your own H5P styles from /dist -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="dist/styles/h5p.css" />
 </head>
 
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #ffffff;">
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background: #ffffff;">
   <div id="h5p-container"></div>
 
-  <!-- Local H5P JS bundle (from your own repo) -->
+  <!-- Load H5P Standalone JS -->
   <script src="dist/main.bundle.js"></script>
 
   <script>
     const { H5P } = H5PStandalone;
+
     new H5P(document.getElementById('h5p-container'), {
-      h5pJsonPath: 'h5p-folder',
+      h5pJsonPath: 'h5p-folder/content',  // ✅ This is the key fix
       frameJs: 'dist/frame.bundle.js',
       frameCss: 'dist/styles/h5p.css'
     });
@@ -27,3 +26,4 @@
 </body>
 
 </html>
+
