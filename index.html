@@ -2,60 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Comanda Mouse</title>
+  <title>Comanda De Bebidas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://unpkg.com/h5p-standalone@3.8.0/dist/styles/h5p.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/main.bundle.css" />
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
       height: 100%;
-      font-family: sans-serif;
-      background-color: #f9f9f9;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
     #h5p-container {
       width: 100%;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .loading {
-      font-size: 1.2em;
-      color: #444;
-    }
-    .error {
-      font-size: 1.2em;
-      color: red;
     }
   </style>
 </head>
 <body>
-  <div id="h5p-container">
-    <div class="loading">Loading interactive content...</div>
-  </div>
+  <div id="h5p-container"></div>
 
-  <script src="https://unpkg.com/h5p-standalone@3.8.0/dist/main.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/main.bundle.js"></script>
   <script>
-    window.addEventListener('load', () => {
-      const container = document.getElementById('h5p-container');
-
-      if (typeof H5PStandalone === 'undefined') {
-        container.innerHTML = '<div class="error">❌ Error: H5PStandalone failed to load. Check your internet connection.</div>';
-        return;
-      }
-
-      try {
-        new H5PStandalone.H5P(container, {
-          h5pJsonPath: './content',
-          frameJs: 'https://unpkg.com/h5p-standalone@3.8.0/dist/frame.bundle.js',
-          frameCss: 'https://unpkg.com/h5p-standalone@3.8.0/dist/styles/h5p.css'
-        });
-      } catch (e) {
-        console.error(e);
-        container.innerHTML = '<div class="error">❌ Error: Failed to load H5P content. Make sure the <code>content/</code> folder exists and contains a valid H5P export including <code>h5p.json</code>.</div>';
-      }
+    H5PStandalone.load({
+      frame: true,
+      h5pJsonPath: "h5p-folder/content",
+      librariesPath: "h5p-folder/content/libraries",
+      id: "h5p-container"
     });
   </script>
 </body>
