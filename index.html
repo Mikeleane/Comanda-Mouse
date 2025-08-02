@@ -1,48 +1,27 @@
-
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title> Your H5P Standalone Website Title </title>
-  <link type="text/css" rel="stylesheet" media="all" href="./dist/styles/h5p.css" />
-  <meta charset="utf-8" />
-  <script type="text/javascript" src="./dist/main.bundle.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comanda De Bebidas</title>
+
+  <!-- H5P CSS from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css" />
 </head>
 
-<body>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color: #ffffff;">
   <div id="h5p-container"></div>
-  <script type="text/javascript">
-    const {
-      H5P
-    } = H5PStandalone;
+
+  <!-- H5P Standalone JS from CDN -->
+  <script src="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/main.bundle.js"></script>
+
+  <script>
+    const { H5P } = H5PStandalone;
     new H5P(document.getElementById('h5p-container'), {
       h5pJsonPath: 'h5p-folder',
-      frameJs: './dist/frame.bundle.js',
-      frameCss: './dist/styles/h5p.css'
+      frameJs: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/frame.bundle.js',
+      frameCss: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css'
     });
   </script>
 </body>
