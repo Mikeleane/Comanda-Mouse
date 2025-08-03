@@ -9,7 +9,7 @@
           "type": "video",
           "sources": [
             {
-              "path": "videos/file-tI67EAmejySxdo3M.mp4",
+              "path": "../videos/file-tI67EAmejySxdo3M.mp4",
               "mime": "video/mp4"
             }
           ],
