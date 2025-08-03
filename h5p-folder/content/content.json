@@ -1,355 +1,42 @@
 {
-  "title": "Comanda De Bebidas",
-  "mainLibrary": "H5P.SpeakTheWordsSet",
-  "license": "U",
-  "preloadedDependencies": [
-    {
-      "machineName": "H5P.Video",
-      "majorVersion": 1,
-      "minorVersion": 6
-    },
-    {
-      "machineName": "H5P.SpeakTheWords",
-      "majorVersion": 1,
-      "minorVersion": 5
-    },
-    {
-      "machineName": "H5P.SpeakTheWordsSet",
-      "majorVersion": 1,
-      "minorVersion": 3
-    }
-  ],
+  "introduction": {
+    "showIntroPage": false
+  },
   "questions": [
     {
       "params": {
         "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-_fu8Wv14I6-OS1nZ.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
+          "type": "video",
+          "sources": [
+            {
+              "path": "videos/file-tI67EAmejySxdo3M.mp4",
+              "mime": "video/mp4"
+            }
+          ],
+          "visuals": {
+            "fit": true,
+            "controls": true
+          },
+          "playback": {
+            "autoplay": false,
+            "loop": false
+          },
+          "l10n": {
+            "name": "Video",
+            "loading": "Video player loading...",
+            "noPlayers": "No video players found.",
+            "noSources": "No video sources found."
           }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "Good afternoon",
-        "acceptedAnswers": [
-          "Good afternoon"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-tI67EAmejySxdo3M.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "I'll be your server.",
-        "acceptedAnswers": [
-          "I'll be your server."
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-gDXyNp5bNVRN4Bft.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "Would you like something to drink?",
-        "acceptedAnswers": [
-          "Would you like something to drink?"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-TXoTYcAPjlglMu7Y.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "Can I start you off with a drink?",
-        "acceptedAnswers": [
-          "Can I start you off with a drink?"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-OExBvcNHM6qBhaIq.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "What would you like to drink?",
-        "acceptedAnswers": [
-          "What would you like to drink?"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-rZqEanrNd5mBBkWA.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "We have a variety of drinks",
-        "acceptedAnswers": [
-          "We have a variety of drinks"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-6kKAgGcboDiz7U49.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "May I recommend a drink?",
-        "acceptedAnswers": [
-          "May I recommend a drink?"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-AoWOEHejJvFctvlF.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "Would you like to see our drinks menu?",
-        "acceptedAnswers": [
-          "Would you like to see our drinks menu?"
-        ],
-        "inputLanguage": "en-GB"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "media": {
-          "disableImageZooming": false,
-          "type": {
-            "params": {
-              "visuals": {
-                "fit": true,
-                "controls": true
-              },
-              "playback": {
-                "autoplay": false,
-                "loop": false
-              },
-              "sources": [
-                {
-                  "path": "videos/file-_Nzc2uf3RD2LCUGm.mp4",
-                  "mime": "video/mp4"
-                }
-              ]
-            },
-            "library": "H5P.Video 1.6"
-          }
-        }
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    },
-    {
-      "params": {
-        "question": "Are you ready to order drinks?",
-        "acceptedAnswers": [
-          "Are you ready to order drinks?"
-        ],
-        "inputLanguage": "en-GB"
+        },
+        "question": "Say 'Good afternoon'",
+        "inputLanguage": "en-GB",
+        "acceptedAnswers": ["Good afternoon"],
+        "speakLabel": "Speak now",
+        "listeningLabel": "Listening...",
+        "correctAnswerText": "That’s correct!",
+        "incorrectAnswerText": "Try again",
+        "retryLabel": "Retry",
+        "showSolutionLabel": "Show solution"
       },
       "library": "H5P.SpeakTheWords 1.5"
     }
