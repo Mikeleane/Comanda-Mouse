@@ -1,10 +1,10 @@
 {
-  "introduction": {
-    "showIntroPage": false
-  },
-  "questions": [
-    {
-      "params": {
+  "title": "Comanda Mouse",
+  "language": "en",
+  "mainLibrary": "H5P.SpeakTheWordsSet",
+  "params": {
+    "questions": [
+      {
         "media": {
           "type": "video",
           "sources": [
@@ -20,12 +20,6 @@
           "playback": {
             "autoplay": false,
             "loop": false
-          },
-          "l10n": {
-            "name": "Video",
-            "loading": "Video player loading...",
-            "noPlayers": "No video players found.",
-            "noSources": "No video sources found."
           }
         },
         "question": "Say 'Good afternoon'",
@@ -33,12 +27,21 @@
         "acceptedAnswers": ["Good afternoon"],
         "speakLabel": "Speak now",
         "listeningLabel": "Listening...",
-        "correctAnswerText": "That’s correct!",
-        "incorrectAnswerText": "Try again",
+        "correctAnswerText": "Correct!",
+        "incorrectAnswerText": "Incorrect. Try again.",
         "retryLabel": "Retry",
         "showSolutionLabel": "Show solution"
-      },
-      "library": "H5P.SpeakTheWords 1.5"
-    }
+      }
+    ]
+  },
+  "preloadedDependencies": [
+    { "machineName": "H5P.SpeakTheWordsSet", "majorVersion": 1, "minorVersion": 3 },
+    { "machineName": "H5P.SpeakTheWords", "majorVersion": 1, "minorVersion": 5 },
+    { "machineName": "H5P.Video", "majorVersion": 1, "minorVersion": 6 },
+    { "machineName": "H5P.Question", "majorVersion": 1, "minorVersion": 5 },
+    { "machineName": "H5P.FontIcons", "majorVersion": 1, "minorVersion": 0 },
+    { "machineName": "H5P.JoubelUI", "majorVersion": 1, "minorVersion": 3 },
+    { "machineName": "FontAwesome", "majorVersion": 4, "minorVersion": 5 },
+    { "machineName": "H5P.Transition", "majorVersion": 1, "minorVersion": 0 }
   ]
 }
