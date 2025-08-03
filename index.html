@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Comanda De Bebidas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Load H5P CSS -->
-  <link rel="stylesheet" href="dist/styles/h5p.css" />
-
-  <!-- Load H5P JS Bundle -->
-  <script src="dist/main.bundle.js"></script>
+  <title> Comanda Mouse </title>
+  <link type="text/css" rel="stylesheet" media="all" href="./dist/styles/h5p.css" />
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="./dist/main.bundle.js"></script>
 </head>
-<body style="margin:0; padding:0; height:100%; background:#ffffff; font-family:Arial, sans-serif;">
 
-  <div id="h5p-container" style="width:100%; height:100%;"></div>
-
-  <script>
-    const { H5P } = H5PStandalone;
-
+<body>
+  <div id="h5p-container"></div>
+  <script type="text/javascript">
+    const {
+      H5P
+    } = H5PStandalone;
     new H5P(document.getElementById('h5p-container'), {
-      h5pJsonPath: 'h5p-folder/content',
-      frameJs: 'dist/frame.bundle.js',
-      frameCss: 'dist/styles/h5p.css'
+      h5pJsonPath: 'h5p-folder',
+      frameJs: './dist/frame.bundle.js',
+      frameCss: './dist/styles/h5p.css'
     });
   </script>
 </body>
-</html>
 
+</html>
