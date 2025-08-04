@@ -1,80 +1,30 @@
 {
-  "title": "Comanda Mouse",
-  "language": "en",
-  "mainLibrary": "H5P.SpeakTheWordsSet",
   "params": {
     "questions": [
       {
-        "media": {
-          "type": "video",
-          "sources": [
+        "video": {
+          "source": [
             {
-              "path": "../videos/file-tI67EAmejySxdo3M.mp4",
+              "path": "videos/file-AoWOEHejJvFctvlF.mp4",
               "mime": "video/mp4"
             }
-          ]
+          ],
+          "startScreenTitle": "Watch and repeat",
+          "title": "Watch the video"
         },
-        "question": "Say 'Good afternoon'",
-        "inputLanguage": "en-GB",
-        "acceptedAnswers": ["Good afternoon"]
-      },
-      {
-        "media": {
-          "type": "video",
-          "sources": [
-            {
-              "path": "../videos/file-gDXyNp5bNVRN4Bft.mp4",
-              "mime": "video/mp4"
-            }
-          ]
-        },
-        "question": "Say 'Hello'",
-        "inputLanguage": "en-GB",
-        "acceptedAnswers": ["Hello"]
+        "speakTheWords": {
+          "text": "Una cerveza por favor"
+        }
       }
-    ]
-  },
-  "preloadedDependencies": [
-    {
-      "machineName": "H5P.SpeakTheWordsSet",
-      "majorVersion": 1,
-      "minorVersion": 3
-    },
-    {
-      "machineName": "H5P.SpeakTheWords",
-      "majorVersion": 1,
-      "minorVersion": 5
-    },
-    {
-      "machineName": "H5P.Video",
-      "majorVersion": 1,
-      "minorVersion": 6
-    },
-    {
-      "machineName": "H5P.Question",
-      "majorVersion": 1,
-      "minorVersion": 5
-    },
-    {
-      "machineName": "H5P.JoubelUI",
-      "majorVersion": 1,
-      "minorVersion": 3
-    },
-    {
-      "machineName": "FontAwesome",
-      "majorVersion": 4,
-      "minorVersion": 5
-    },
-    {
-      "machineName": "H5P.FontIcons",
-      "majorVersion": 1,
-      "minorVersion": 0
-    },
-    {
-      "machineName": "H5P.Transition",
-      "majorVersion": 1,
-      "minorVersion": 0
+    ],
+    "behaviour": {
+      "disableSolutionsButton": false,
+      "disableRetry": false,
+      "showSolutionRequiresInput": true
     }
-  ]
+  },
+  "metadata": {
+    "title": "Comanda De Bebidas"
+  }
 }
 
