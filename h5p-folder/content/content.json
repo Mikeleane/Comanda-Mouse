@@ -2,29 +2,17 @@
   "params": {
     "questions": [
       {
-        "video": {
-          "source": [
-            {
-              "path": "videos/file-AoWOEHejJvFctvlF.mp4",
-              "mime": "video/mp4"
-            }
-          ],
-          "startScreenTitle": "Watch and repeat",
-          "title": "Watch the video"
-        },
-        "speakTheWords": {
-          "text": "Una cerveza por favor"
+        "question": {
+          "text": "What is 2 + 2?",
+          "answers": [
+            {"text": "4", "correct": true},
+            {"text": "3", "correct": false}
+          ]
         }
       }
-    ],
-    "behaviour": {
-      "disableSolutionsButton": false,
-      "disableRetry": false,
-      "showSolutionRequiresInput": true
-    }
+    ]
   },
   "metadata": {
-    "title": "Comanda De Bebidas"
+    "title": "Comanda Mouse Activity"
   }
 }
-
