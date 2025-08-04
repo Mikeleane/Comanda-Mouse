@@ -2,17 +2,20 @@
   "params": {
     "questions": [
       {
-        "question": {
-          "text": "What is 2 + 2?",
+        "params": {
+          "question": "What is the capital of France?",
           "answers": [
-            {"text": "4", "correct": true},
-            {"text": "3", "correct": false}
+            { "text": "Paris", "correct": true },
+            { "text": "London", "correct": false },
+            { "text": "Berlin", "correct": false }
           ]
-        }
+        },
+        "library": "H5P.SingleChoiceSet 1.11"
       }
     ]
   },
   "metadata": {
-    "title": "Comanda Mouse Activity"
+    "title": "Comanda Mouse Test",
+    "license": "U"
   }
 }
